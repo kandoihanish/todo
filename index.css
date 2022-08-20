@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #aab1a0;
+}
+
+.header {
+  margin: 10px auto;
+  background-color: #307e93b0;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  padding: 50px 150px;
+  color: white;
+  width: 80%;
+}
+
+.header h2 {
+  margin-bottom: 8px;
+  color: black;
+  -webkit-user-select: none;
+
+  user-select: none;
+}
+
+#taskinput {
+  border: none;
+  padding: 10px;
+  width: 75%;
+  float: left;
+  font-size: 16px;
+}
+
+.taskadd {
+  padding: 10px;
+  background-color: #9fa18d;
+  width: 25%;
+  float: left;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.taskadd:hover {
+  background-color: #616254;
+}
+
+.main {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #307e93b0;
+  margin: 10px auto;
+  padding: 50px 150px;
+  color: black;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+ul li {
+  position: relative;
+  padding: 15px 35px;
+  background-color: #858776;
+  list-style-type: none;
+  cursor: pointer;
+  font-style: oblique;
+  font-size: 20px;
+  transition: 0.8s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #9fa18d;
+}
+
+ul li:hover {
+  background-color: #616254;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  border-color: #fff;
+  border-style: solid;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: black;
+  font-size: 25px;
+  padding: 10px 30px 15px 26px;
+}
+
+.close:hover {
+  background-color: #307e93b0;
+  color: white;
+}
+
+.reset {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #9fa18d;
+  margin-top: 10px ;
+  cursor: pointer;
+  /* padding: 10px 10px; */
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  padding-right: 15px;
+  width: 6%;
+  transition: 0.8s;
+  font-weight: bold;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.reset:hover {
+  background-color: #616254;
+}

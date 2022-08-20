@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo.com</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+     
+<body>
+    <div class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="taskinput" placeholder="What needs to be done?">
+        <span onclick="newElement()" class="taskadd">Add</span>
+    </div>
+    <div class="main">
+        <ul id="tasklist" class="r" >
+            <!-- <li>I will wake up early at morning </li>
+            <li class="checked">I will wake up early at morning </li>
+            <li>I will wake up early at morning </li>
+            <li>I will wake up early at morning </li>
+            <li>I will wake up early at morning </li> -->
+        </ul>
+
+    </div>
+     <div class="last" align="center" >
+        <span onclick="clearall()" class="reset">Reset</span>
+     </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
